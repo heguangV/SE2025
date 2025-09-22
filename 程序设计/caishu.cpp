@@ -29,17 +29,3 @@ void guessnumber(int n)
     }
     printf("%d\n", res);
 }
-
-void guessnumber(int n){
-    int l = 1, r = n, res = 0;
-    while (l <= r)
-    {
-        int mid = (l + r) >> 1;
-        if (guess(mid)){
-            l = mid + 1;
-            res = mid;
-        }   
-        else r = mid - 1;
-    }
-    printf("%d\n", res);
-}
