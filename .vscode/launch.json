@@ -2,14 +2,32 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++: clang.exe 生成和调试活动文件",
+      "name": "C: clang 生成并调试当前文件",
       "type": "lldb",
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
       "args": [],
       "cwd": "${fileDirname}",
-      "preLaunchTask": "C/C++: clang.exe 生成活动文件",
+      "preLaunchTask": "C: clang 构建活动文件",
       "sourceLanguages": ["c"]
+    },
+    {
+      "name": "C++: clang++ 生成并调试当前文件",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "C++: clang++ 构建活动文件",
+      "sourceLanguages": ["cpp"]
+    },
+    {
+      "name": "Python: 调试当前文件",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "cwd": "${fileDirname}"
     }
   ]
 }
