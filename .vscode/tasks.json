@@ -1,152 +1,176 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "C: clang 构建活动文件",
-			"type": "shell",
-			"command": "D:/Users/penty/Downloads/llvm-mingw-20250910-ucrt-x86_64/llvm-mingw-20250910-ucrt-x86_64/bin/clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"\"${file}\"",
-				"-o",
-				"\"${fileDirname}/${fileBasenameNoExtension}.exe\""
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"group": "build",
-			"problemMatcher": [
-				"$gcc"
-			]
-		},
-		{
-			"label": "C++: clang++ 构建活动文件",
-			"type": "shell",
-			"command": "D:/Users/penty/Downloads/llvm-mingw-20250910-ucrt-x86_64/llvm-mingw-20250910-ucrt-x86_64/bin/clang++.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-std=c++17",
-				"-g",
-				"\"${file}\"",
-				"-o",
-				"\"${fileDirname}/${fileBasenameNoExtension}.exe\""
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"group": {
-				"kind": "build",
-				"isDefault": false
-			},
-			"problemMatcher": [
-				"$gcc"
-			]
-		},
-		{
-			"type": "cppbuild",
-			"label": "C/C++: clang++.exe 生成活动文件",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang++.exe",
-			"args": [
-				"-fcolor-diagnostics",
-				"-fansi-escape-codes",
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "调试器生成的任务。"
-		},
-		{
-			"label": "编译 chuzhan.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\\\Dust\\\\数据结构\\\\chuzhan.c",
-				"-o",
-				"e:\\\\Dust\\\\数据结构\\\\chuzhan.exe"
-			],
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		},
-		{
-			"label": "编译 gupiao.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\Dust\\数据结构\\gupiao.c",
-				"-o",
-				"e:\\Dust\\数据结构\\gupiao.exe"
-			],
-			"group": "build"
-		},
-		{
-			"label": "编译 gupiao.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\Dust\\数据结构\\gupiao.c",
-				"-o",
-				"e:\\Dust\\数据结构\\gupiao.exe"
-			],
-			"group": "build"
-		},
-		{
-			"label": "临时编译 gupiao.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\Dust\\数据结构\\gupiao.c",
-				"-o",
-				"e:\\Dust\\数据结构\\gupiao.exe"
-			],
-			"group": "build"
-		},
-		{
-			"label": "构建新的 gupiao.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\Dust\\数据结构\\gupiao.c",
-				"-o",
-				"e:\\Dust\\数据结构\\gupiao.exe"
-			],
-			"group": "build"
-		},
-		{
-			"label": "构建新的 gupiao.c",
-			"type": "shell",
-			"command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"e:\\Dust\\数据结构\\gupiao.c",
-				"-o",
-				"e:\\Dust\\数据结构\\gupiao.exe"
-			],
-			"group": "build"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C: clang 构建活动文件",
+            "type": "shell",
+            "command": "D:/Users/penty/Downloads/llvm-mingw-20250910-ucrt-x86_64/llvm-mingw-20250910-ucrt-x86_64/bin/clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "\"${file}\"",
+                "-o",
+                "\"${fileDirname}/${fileBasenameNoExtension}.exe\""
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "C++: clang++ 构建活动文件",
+            "type": "shell",
+            "command": "D:/Users/penty/Downloads/llvm-mingw-20250910-ucrt-x86_64/llvm-mingw-20250910-ucrt-x86_64/bin/clang++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++17",
+                "-g",
+                "\"${file}\"",
+                "-o",
+                "\"${fileDirname}/${fileBasenameNoExtension}.exe\""
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++.exe 生成活动文件",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang++.exe",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "label": "编译 chuzhan.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\\\Dust\\\\数据结构\\\\chuzhan.c",
+                "-o",
+                "e:\\\\Dust\\\\数据结构\\\\chuzhan.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "编译 gupiao.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\Dust\\数据结构\\gupiao.c",
+                "-o",
+                "e:\\Dust\\数据结构\\gupiao.exe"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "编译 gupiao.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\Dust\\数据结构\\gupiao.c",
+                "-o",
+                "e:\\Dust\\数据结构\\gupiao.exe"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "临时编译 gupiao.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\Dust\\数据结构\\gupiao.c",
+                "-o",
+                "e:\\Dust\\数据结构\\gupiao.exe"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "构建新的 gupiao.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\Dust\\数据结构\\gupiao.c",
+                "-o",
+                "e:\\Dust\\数据结构\\gupiao.exe"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "构建新的 gupiao.c",
+            "type": "shell",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "e:\\Dust\\数据结构\\gupiao.c",
+                "-o",
+                "e:\\Dust\\数据结构\\gupiao.exe"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang.exe 生成活动文件",
+            "command": "D:\\Users\\penty\\Downloads\\llvm-mingw-20250910-ucrt-x86_64\\llvm-mingw-20250910-ucrt-x86_64\\bin\\clang.exe",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        }
+    ]
 }
